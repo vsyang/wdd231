@@ -1,0 +1,39 @@
+@media only screen and (min-width: 450px){
+    header, nav ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    nav {
+        height: 44px;
+    }
+
+    #hamburgerButton {
+        display: none;
+    }
+
+    ul.navLinks, ul.navLinks.open {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    nav li:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+        display: grid;
+        margin: 0 auto;
+    }
+}
+    
