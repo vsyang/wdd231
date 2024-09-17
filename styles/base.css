@@ -1,7 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header, footer, h2 {
+    background-color: #115273;
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+header img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 25px;
+}
+
 h1, h2 {
     font-family: "Poetsen One", system-ui;
 }
 
-main {
-    font-family: "Roboto", sans-serif;
+nav {
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }
+
+#hamburgerMenu {
+    display: block;
+    font-size: 40px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: center;
+    padding: 5px 2vw;
+    border: none;
+}
+
+#hamburgerMenu::before {
+    content: "☰";
+} 
+
+#hamburgerMenu.open::before {
+    content: "x";
+}
+
+ul.navLinks {
+    display: none;
+    list-style-type: none;
+}
+
+ul.open.navLinks {
+    display: block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .active {
+    background-color: rgba(123, 29, 29, 0.6);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav li {
+    padding: 10px;
+}
+
+main {
+    padding: 16px;
+}
+
+main section {
+    margin: 1rem 2vw;
+    color: black;
+    border: 1px solid rgb(63, 60, 60, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #eee;
+}
+

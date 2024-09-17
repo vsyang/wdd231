@@ -10,11 +10,15 @@
         margin: 0 auto;
     }
 
+    header img, main section {
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    }
+
     nav {
         height: 44px;
     }
 
-    #hamburgerButton {
+    #hamburgerMenu {
         display: none;
     }
 
