@@ -89,6 +89,20 @@ main section {
     border: 1px solid rgb(63, 60, 60, 0.4);
     border-radius: 5px;
     overflow: hidden;
-    background-color: #eee;
+    background-color: #f7f5f5;
 }
 
+h2 {
+    padding: 8px;
+}
+
+main div {
+    padding-left: 20px;
+}
+
+main figure {
+    display: block;
+    margin: 25px;
+    text-align: center;
+    font-size: 16px;
+}
