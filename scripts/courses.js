@@ -83,22 +83,22 @@ const allButton = document.querySelector('#all');
 const cseButton = document.querySelector('#cse');
 const wddButton = document.querySelector('#wdd');
 
-console.log(courses);
 const displayCourses = (courses) => {
     reset();
-
+    
     courses.forEach((course) => {
-        let listItem = document.createElement('div');
+        console.log(course)
+        let listItem = document.createElement('p');
         listItem.innerHTML = `
-        <p>${course.subject} ${course.number}</p>`;
-        courseList.apphendChild(listItem);
+        ${course.subject} ${course.number}`;
+        
+        courseList.appendChild(listItem);
         console.log(listItem)
     });
-    displayCourses(data.courses)
 };
 
 const reset = () => {
     courseList.innerHTML = '';
 };
 
-displayCourses();
+displayCourses(courses);
