@@ -86,19 +86,48 @@ const wddButton = document.querySelector('#wdd');
 const displayCourses = (courses) => {
     reset();
     
+    let totalCredits = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+
     courses.forEach((course) => {
-        console.log(course)
         let listItem = document.createElement('p');
         listItem.innerHTML = `
         ${course.subject} ${course.number}`;
+
+        if (course.completed === true) {
+            listItem.style.backgroundColor = 'lightblue';
+        }
         
         courseList.appendChild(listItem);
-        console.log(listItem)
     });
+
+    let displayTotalCredits = document.createElement('p');
+    displayTotalCredits.classList.add('credits');
+    displayTotalCredits.innerHTML = `Total Credits: ${totalCredits}`;
+    courseList.appendChild(displayTotalCredits);
 };
 
 const reset = () => {
     courseList.innerHTML = '';
 };
+
+const displaySubject = (subject) => {
+    const filteredSubject = courses.filter((course) => course.subject === subject);
+    displayCourses(filteredSubject);
+    //     {
+    //     if (subject === 'CSE') {
+    //         document.getElementById('cse').innerHTML = 'CSE';
+    //         return course.subject + course.number;
+    //     } else if (subject === 'WDD') {
+    //         document.getElementById('wdd').innerHTML = 'WDD';
+    //         return course.subject + course.number
+    //     }
+    // });
+};
+
+document.getElementById('all').addEventListener('click', () => displayCourses(courses));
+
+document.getElementById('cse').addEventListener('click', () => displaySubject('CSE'));
+
+document.getElementById('wdd').addEventListener('click', () => displaySubject('WDD'));
 
 displayCourses(courses);
