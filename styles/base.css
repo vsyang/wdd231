@@ -12,9 +12,10 @@ header, footer, h2 {
 }
 
 header {
-    display: flex;
-    padding: 20px;
-    position: relative;
+    display: grid;
+    grid-template-columns: 44px auto 47px;
+    align-items: center;
+    padding: 10px;
 }
 
 header img {

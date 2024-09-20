@@ -1,0 +1,18 @@
+{
+    "familyName": "Brown",
+    "date": "2020-01-01", 
+    "census": "2",
+    "visited": true,
+    "familyMembers": [
+        {
+            "name": "Adam Brown",
+            "gender": "Male",
+            "birthday": "1950-06-01"
+        },
+        {
+            "name": "Eve Brown",
+            "gender": "Female",
+            "birthday": "1950-06-02"                
+        }
+    ]
+}
