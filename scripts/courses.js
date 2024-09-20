@@ -113,15 +113,6 @@ const reset = () => {
 const displaySubject = (subject) => {
     const filteredSubject = courses.filter((course) => course.subject === subject);
     displayCourses(filteredSubject);
-    //     {
-    //     if (subject === 'CSE') {
-    //         document.getElementById('cse').innerHTML = 'CSE';
-    //         return course.subject + course.number;
-    //     } else if (subject === 'WDD') {
-    //         document.getElementById('wdd').innerHTML = 'WDD';
-    //         return course.subject + course.number
-    //     }
-    // });
 };
 
 document.getElementById('all').addEventListener('click', () => displayCourses(courses));

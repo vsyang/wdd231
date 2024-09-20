@@ -124,7 +124,7 @@ main figure {
 }
 
 #courseList p {
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
     text-align: center;
     border-radius: 5px;
@@ -135,6 +135,7 @@ main figure {
     background-color: black;
     color: red;
     font-size: 24px;
+    padding: 10px;
 }
 
 footer {

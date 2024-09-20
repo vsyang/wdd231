@@ -9,35 +9,66 @@
         max-width: 900px;
         margin: 0 auto;
     }
-
+    
     header img, main section {
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
     }
-
+    
     nav {
         height: 44px;
     }
-
+    
     #hamburgerMenu {
         display: none;
     }
-
+    
     ul.navLinks, ul.navLinks.open {
         display: flex;
         justify-content: space-evenly;
     }
-
+    
     nav a {
         padding: 10px;
     }
-
+    
     nav li:hover {
         background-color: rgba(255, 255, 255, 0.2);
     }
-
+    
     main {
         display: grid;
-        margin: 0 auto;
+        grid-template-columns: 2fr 1fr;
     }
+
+    section {
+        grid-column: span 2;
+    }
+
+    .location {
+        grid-column: 3/4;
+    }
+
+    .course-section {
+        grid-column: 1/4;
+    }
+
+    .courses button {
+        width: 90px;
+    }
+
+    #courseList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #courseList p {
+        width: 240px;
+        justify-content: center;
+    }
+
+    .credits {
+        flex: 100%;
+    }
+
 }
     
