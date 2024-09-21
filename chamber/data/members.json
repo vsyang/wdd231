@@ -19,6 +19,15 @@
             "business": "Sporting Goods"
         },
         {
+            "name": "DragonAir",
+            "address": "9520 Dragonite Street",
+            "phone": "223-674-2348",
+            "website": "www.dragonair.com",
+            "image": "dragonair.webp",
+            "memberLevel": "Gold",
+            "business": "Travel"
+        },
+        {
             "name": "Flareon Weaponry",
             "address": "4393 Eevee Drive",
             "phone": "223-543-1443",
@@ -35,15 +44,6 @@
             "image": "pikasparks.webp",
             "memberLevel": "Silver",
             "business": "Electrician"
-        },
-        {
-            "name": "DragonAir",
-            "address": "9520 Dragonite Street",
-            "phone": "223-674-2348",
-            "website": "www.dragonair.com",
-            "image": "dragonair.webp",
-            "memberLevel": "Gold",
-            "business": "Travel"
         },
         {
             "name": "Chikorita Botanical Gardens",
