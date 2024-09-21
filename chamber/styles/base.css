@@ -10,9 +10,8 @@
 }
 
 :root {
-    --shadow1: rgb(225, 18, 18);
+    --shadow1: rgba(225, 18, 18, 0.862);
     --shadow2: rgb(247, 242, 233);
-    --extra-color: #f52f57ff;
     --heading-color: rgba(0, 0, 0, 0.929);
     --body-color: #37393aff;
 
@@ -59,24 +58,24 @@ nav {
     color: white;
 }
 
-#hamburgerButton {
+#hamburgerMenu {
     display: block;
     font-size: 40px;
     background: none;
     border: none;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     width: 44px;
     text-align: left;
     padding: 5px 2vw;
 }
 
-#hamburgerButton::before {
+#hamburgerMenu::before {
     content: "☰";
 }
 
-#hamburgerButton.open::before {
-    content: " x";
+#hamburgerMenu.open::before {
+    content: "x";
 }
 
 ul.navLinks {
@@ -112,7 +111,8 @@ nav li {
 }
 
 footer .logo img {
-    width: 90px;
+    width: 100px;
+    height: 100px;
     padding-top: 30px;
 }
 
@@ -120,10 +120,18 @@ footer .logo img {
     padding-top: 25px;
 }
 
+.social-media img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
 footer p, #currentYear {
     background-color: black;
     color: #f6f7eb;
     padding: 5px;
+    font-size: 14px;
 }
 
 /* directory page */
