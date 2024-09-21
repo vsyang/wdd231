@@ -9,14 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="webpage">
     <meta property="og:description" content="Chamber of Commerce members directory">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/05/04/11/04/pokeball-5128709_1280.jpg">
     <meta property="og:url" content="https://vsyang.github.io/wdd231/chamber/directory.html">
+    <script src="../scripts/hamburger.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="#" alt="logo" width="35" height="35">
+        <h1>Pallet Town Chamber of Commerce</h1>
+        <button id="hamburgerButton" title="menu button"></button>
+    </header>
+
+    <nav>
+        <ul class="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="directory-main">
+        <h2 class="directory-header">Member Directory</h2>
+
+        <div class="directory-buttons">
+            <button id="grid-button" class="active button"><img src="images/grid-icon.webp" alt="grid button icon" width="44" height="44" title="grid button"></button>
+            <button id="list-button" class="button"><img src="images/list-icon.webp" alt="list button icon" width="44" height="44" title="list button"></button>
+        </div>
+
+        <div id="member-directory" class="grid"></div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts/members.js"></script>
 </body>
 </html>

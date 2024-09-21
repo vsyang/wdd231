@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Misty Recreation Center",
+            "address": "2901 Starmie Lane",
+            "phone": "223-320-1010",
+            "website": "www.mistyrecreationcenter.gov",
+            "image": "mistyrecreationcenter.webp",
+            "memberLevel": "Gold",
+            "business": "Recreation"
+        },
+        {
+            "name": "Brock Sporting Goods",
+            "address": "3029 Onix Circle",
+            "phone": "223-542-4145",
+            "website": "www.brocksports.com",
+            "image": "brocksportinggoods.webp",
+            "memberLevel": "Gold",
+            "business": "Sporting Goods"
+        },
+        {
+            "name": "Flareon Weaponry",
+            "address": "4393 Eevee Drive",
+            "phone": "223-543-1443",
+            "website": "www.flareonweaponry.com",
+            "image": "flareonweaponry.webp",
+            "memberLevel": "Silver",
+            "business": "Weaponry"
+        },
+        {
+            "name": "Pika Sparks",
+            "address": "2950 Pikachu Avenue",
+            "phone": "223-245-5653",
+            "website": "www.pikasparks.com",
+            "image": "pikasparks.webp",
+            "memberLevel": "Silver",
+            "business": "Electrician"
+        },
+        {
+            "name": "DragonAir",
+            "address": "9520 Dragonite Street",
+            "phone": "223-674-2348",
+            "website": "www.dragonair.com",
+            "image": "dragonair.webp",
+            "memberLevel": "Gold",
+            "business": "Travel"
+        },
+        {
+            "name": "Chikorita Botanical Gardens",
+            "address": "3043 Grass-type Boulevard",
+            "phone": "223-765-2382",
+            "website": "www.chikoritabotanicalgardens.com",
+            "image": "chikoritabotanicalgardens.webp",
+            "memberLevel": "Bronze",
+            "business": "Weddings"
+        },
+        {
+            "name": "Pokemon Health",
+            "address": "100 Healing Center",
+            "phone": "495-494-1931",
+            "website": "www.pokemonhealth.org",
+            "image": "pokemonhealth.webp",
+            "memberLevel": "NP",
+            "business": "Non-Profit Organization"
+        }
+    ]
+}
