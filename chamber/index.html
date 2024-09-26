@@ -23,20 +23,43 @@
     <header>
         <img src="images/logo.webp" alt="logo" width="35" height="35">
         <h1>Pallet Town Chamber of Commerce</h1>
-        <button id="hamburgerMenu" title="menu button"></button>
+        <button id="hamburgerMenu" title="menu button" width="35" height="35"></button>
     </header>
 
     <nav>
         <ul class="navLinks">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/group-small.webp">
+                <img src="images/group-medium.webp" alt="Group picture of members of Pallet Town Chamber of Commerce" width="1000" height="500">
+            </picture>
+            <button class="cta" onclick="window.location.href='join.html'" title="join button">Join Today!</button>
+        </div>
 
+        <section class="current-events">
+            <h2>Events</h2>
+
+            <p id="current-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iste similique quaerat assumenda veniam fuga, consequatur distinctio repellendus, obcaecati laboriosam iure id itaque molestiae minima iusto magnam maxime possimus. Aliquam.></p>
+        </section>
+
+        <section class="weather-info">
+            <h2>Weather</h2>
+        </section>
+
+        <section class="spotlight">
+            <h2>A Special Thanks To</h2>
+            <div class="spotlights"></div>
+            <div class="spotlights"></div>
+            <div class="spotlights"></div>
+        </section>
     </main>
 
     <footer>
@@ -72,5 +95,7 @@
     </footer>
 
     <script src="../scripts/dates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

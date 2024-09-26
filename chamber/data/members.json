@@ -7,7 +7,8 @@
             "website": "www.mistyrecreationcenter.gov",
             "image": "mistyrecreationcenter.webp",
             "memberLevel": "Gold",
-            "business": "Recreation"
+            "business": "Recreation",
+            "ceoImage": "misty.webp"
         },
         {
             "name": "Brock Sporting Goods",
@@ -16,7 +17,8 @@
             "website": "www.brocksports.com",
             "image": "brocksportinggoods.webp",
             "memberLevel": "Gold",
-            "business": "Sporting Goods"
+            "business": "Sporting Goods", 
+            "ceoImage": "brock.webp"
         },
         {
             "name": "DragonAir",
@@ -25,7 +27,8 @@
             "website": "www.dragonair.com",
             "image": "dragonair.webp",
             "memberLevel": "Gold",
-            "business": "Travel"
+            "business": "Travel",
+            "ceoImage": "dragonite.webp"
         },
         {
             "name": "Flareon Weaponry",
@@ -34,7 +37,8 @@
             "website": "www.flareonweaponry.com",
             "image": "flareonweaponry.webp",
             "memberLevel": "Silver",
-            "business": "Weaponry"
+            "business": "Weaponry",
+            "ceoImage": "flareon.webp"
         },
         {
             "name": "Pika Sparks",
@@ -43,7 +47,8 @@
             "website": "www.pikasparks.com",
             "image": "pikasparks.webp",
             "memberLevel": "Silver",
-            "business": "Electrician"
+            "business": "Electrician",
+            "ceoImage": "pikachu.webp"
         },
         {
             "name": "Chikorita Botanical Gardens",
@@ -52,7 +57,8 @@
             "website": "www.chikoritabotanicalgardens.com",
             "image": "chikoritabotanicalgardens.webp",
             "memberLevel": "Bronze",
-            "business": "Weddings"
+            "business": "Weddings",
+            "ceoImage": "chikorita.webp"
         },
         {
             "name": "Pokemon Health",
@@ -61,7 +67,8 @@
             "website": "www.pokemonhealth.org",
             "image": "pokemonhealth.webp",
             "memberLevel": "NP",
-            "business": "Non-Profit Organization"
+            "business": "Non-Profit Organization",
+            "ceoImage": "nursejoy.webp"
         }
     ]
 }
