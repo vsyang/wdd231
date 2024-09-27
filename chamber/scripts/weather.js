@@ -1,7 +1,9 @@
 const weather = document.querySelector('.weather-info');
+let current = document.querySelector('.current');
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const description = document.querySelector('figcaption');
+let forecast = document.querySelector('.forecast');
 const url = 'https://api.openweathermap.org/data/2.5/';
 const apiKey = 'c8e24775a530c3c13e6c5c81a4f0e243';
 
@@ -27,10 +29,10 @@ async function apiFetch() {
 }
 
 function displayResults(data, forecast) {
-    const heading = document.createElement('h3');
-    heading.textContent = 'Current Weather';
-    let current = document.querySelector('.current-weather');
-    current.textContent = `${data.main.temp}°F`
+    
+    let heading = document.querySelector('#current-heading');
+    heading.textContent = `Current Weather`;
+    currentTemp.textContent = `${data.main.temp}°F`
     const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let capDescription = data.weather[0].description;
     weatherIcon.setAttribute('src', icon);
@@ -42,7 +44,26 @@ function displayResults(data, forecast) {
     current.appendChild(description);
 
 
-    let weatherForecast = document.querySelector('.weather-forecast');
+    let weatherForecast = document.querySelector('.forecast');
+    let forecastHeader = document.createElement('h3');
+    forecastHeader.textContent = `Weather Forecast`;
+    for (let i = 0; i < 3; i++) {
+        let forecastData = document.createElement('div');
+        let icon = document.createElement('img');
+        let iconSource = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        let description = forecast.list[i].weather[0].description;
+        icon.setAttribute('src', iconSource);
+        icon.setAttribute('alt', description);
+        icon.setAttribute('width', 50);
+        icon.setAttribute('height', 50)
+        icon.setAttribute('loading', 'lazy');
+        forecastData.appendChild(icon);
+        forecastData.innerHTML += `<br>${forecast.list[i].main.temp}°F`;
+        weatherForecast.appendChild(forecastData);
+
+    }
+    forecast.appendChild(forecastHeader);
+    forecast.appendChild(weatherForecast);
 
 }
 
