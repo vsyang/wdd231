@@ -44,13 +44,15 @@ function displayResults(data, forecast) {
     current.appendChild(description);
 
 
-    let weatherForecast = document.querySelector('.forecast');
+    let weatherForecast = document.querySelector('.weather-forecast');
     let forecastHeader = document.createElement('h3');
-    forecastHeader.textContent = `Weather Forecast`;
+    forecastHeader.textContent = `3-Day Weather Forecast`;
+    weatherForecast.appendChild(forecastHeader);
+
     for (let i = 0; i < 3; i++) {
         let forecastData = document.createElement('div');
         let icon = document.createElement('img');
-        let iconSource = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        let iconSource = `https://openweathermap.org/img/w/${forecast.list[i].weather[0].icon}.png`;
         let description = forecast.list[i].weather[0].description;
         icon.setAttribute('src', iconSource);
         icon.setAttribute('alt', description);
@@ -60,10 +62,7 @@ function displayResults(data, forecast) {
         forecastData.appendChild(icon);
         forecastData.innerHTML += `<br>${forecast.list[i].main.temp}°F`;
         weatherForecast.appendChild(forecastData);
-
     }
-    forecast.appendChild(forecastHeader);
-    forecast.appendChild(weatherForecast);
 
 }
 
