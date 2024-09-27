@@ -63,7 +63,6 @@ function displayResults(data, forecast) {
         forecastData.innerHTML += `<br>${forecast.list[i].main.temp}°F`;
         weatherForecast.appendChild(forecastData);
     }
-
 }
 
 apiFetch();
