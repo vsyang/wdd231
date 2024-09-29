@@ -32,7 +32,7 @@ function displayResults(data, forecast) {
     
     let heading = document.querySelector('#current-heading');
     heading.textContent = `Current Weather`;
-    currentTemp.textContent = `${data.main.temp}°F`
+    currentTemp.textContent = `${Math.round(data.main.temp)}°F`
     const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let capDescription = data.weather[0].description;
     weatherIcon.setAttribute('src', icon);
@@ -46,21 +46,27 @@ function displayResults(data, forecast) {
 
     let weatherForecast = document.querySelector('.weather-forecast');
     let forecastHeader = document.createElement('h3');
-    forecastHeader.textContent = `3-Day Weather Forecast`;
+    forecastHeader.textContent = `Weather Forecast`;
     weatherForecast.appendChild(forecastHeader);
+
+    let displayedDay = new Set();
 
     for (let i = 0; i < 3; i++) {
         let forecastData = document.createElement('div');
         let icon = document.createElement('img');
         let iconSource = `https://openweathermap.org/img/w/${forecast.list[i].weather[0].icon}.png`;
         let description = forecast.list[i].weather[0].description;
+        
         icon.setAttribute('src', iconSource);
         icon.setAttribute('alt', description);
         icon.setAttribute('width', 50);
         icon.setAttribute('height', 50)
         icon.setAttribute('loading', 'lazy');
         forecastData.appendChild(icon);
-        forecastData.innerHTML += `<br>${forecast.list[i].main.temp}°F`;
+
+        forecastData.classList.add('forecast-data')
+        
+        forecastData.innerHTML += `<br>${Math.round(forecast.list[i].main.temp)}°F`;
         weatherForecast.appendChild(forecastData);
     }
 }

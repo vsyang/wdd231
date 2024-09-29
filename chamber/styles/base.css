@@ -22,7 +22,7 @@
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--heading-color);
-    padding: 25px;
+    padding: 20px;
 }
 
 h2 {
@@ -282,7 +282,7 @@ main section  {
 }
 
 .weather-forecast h3 {
-    flex: 0 0 100%;;
+    flex: 0 0 100%;
 }
 
 .weather-forecast {
@@ -292,16 +292,37 @@ main section  {
 }
 
 .spotlights {
-    width: auto;
+    width: 86%;
     height: auto;
     border: 1px solid lightgray;    
     margin: 30px;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .spotlights h3 {
-    margin: 25px 0;
     font-size: larger;
+}
 
+.top {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.top2 {
+    grid-column: 1/3;
+    padding-bottom: 20px;
+}
+
+.ceoIcon {
+    grid-row: 3/5;
+}
+
+.sideInfo {
+    grid-column: 2/3;
+    text-align: left;
+    font-size: 15px;
+    align-content: center;
 }

@@ -14,20 +14,33 @@ function displaySpotlights (data) {
         const randomMember = randomMembers[index];
         const memberName = document.createElement('h3');
         memberName.textContent = randomMember.name;
+        memberName.classList.add('top');
 
         const businessType = document.createElement('p');
         businessType.textContent = randomMember.business;
+        businessType.classList.add('top2');
 
         const businessImage = document.createElement('img');
         businessImage.setAttribute('src', `images/${randomMember.ceoImage}`);
         businessImage.setAttribute('alt', randomMember.name);
-        businessImage.setAttribute('width', 250);
-        businessImage.setAttribute('height', 143);
+        businessImage.setAttribute('width', 100);
+        businessImage.setAttribute('height', 100);
         businessImage.setAttribute('loading', 'lazy');
+        businessImage.classList.add('ceoIcon');
 
-        spotlight.appendChild(businessImage);
+        const businessPhone = document.createElement('p');
+        businessPhone.textContent = `PHONE: ${randomMember.phone}`;
+        businessPhone.classList.add('sideInfo');
+
+        const businessWeb = document.createElement('p');
+        businessWeb.textContent = `URL: ${randomMember.website}`;
+        businessWeb.classList.add('sideInfo');
+
         spotlight.appendChild(memberName);
         spotlight.appendChild(businessType);
+        spotlight.appendChild(businessImage);
+        spotlight.appendChild(businessPhone);
+        spotlight.appendChild(businessWeb);
     });
 }
 
