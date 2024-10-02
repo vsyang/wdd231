@@ -92,6 +92,27 @@ const displayCourses = (courses) => {
         let listItem = document.createElement('p');
         listItem.innerHTML = `
         ${course.subject} ${course.number}`;
+        let listDialog = document.createElement('dialog');
+        listDialog.innerHTML = '';
+        listDialog.innerHTML = `
+            <h3>${course.title}</h3>
+            <p><strong>${course.subject} ${course.number}</strong></p>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+            <p><strong>Technologies:</strong> ${course.technology}</p>
+            <button id="closeModal">Close</button>
+        `;
+        document.body.appendChild(listDialog);
+
+        listItem.addEventListener('click', () => {
+            listDialog.showModal();
+        });
+
+        listDialog.querySelector('#closeModal').addEventListener('click', () => {
+            listDialog.close();
+        });
+
 
         if (course.completed === true) {
             listItem.style.backgroundColor = 'lightblue';

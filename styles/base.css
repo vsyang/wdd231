@@ -139,6 +139,29 @@ main figure {
     padding: 10px;
 }
 
+dialog {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: rgb(252, 247, 240);
+    box-shadow: 0 0 3rem #515050;
+    width: 90%;
+    max-width: 600px;
+    margin: 300px 23px;
+}
+
+::backdrop {
+    background-color: #26088874;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 footer {
     padding: 20px;
 }
@@ -147,3 +170,4 @@ footer {
     padding-top: 10px;
     font-size: 12px;
 }
+
