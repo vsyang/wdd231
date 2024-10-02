@@ -45,6 +45,16 @@ nav {
     text-align: center;
     padding: 5px 2vw;
     border: none;
+    animation: pretty 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pretty {
+    0% {color: white;}
+    25% {color: aqua;}
+    50% {color: rgb(14,244,14);}
+    75% {color: yellow;}
+    100% {color: pink;}
 }
 
 #hamburgerMenu::before {
