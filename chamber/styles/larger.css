@@ -11,6 +11,10 @@
         font-size: 44px;
     }
 
+    header {
+        align-items: center;
+    }
+
     header, main, nav, footer {
         max-width: 1200px;
         margin: 0 auto;
@@ -45,8 +49,9 @@
         padding: 20px;
     }
     
-    footer .logo img {
+    footer .logo img, header img {
         width: 100px;
+        height: 100px;
     }
     
     .social-media {
@@ -125,7 +130,7 @@
         display: grid;
         grid-template-columns: 200px 200px;
         grid-template-rows: 80px 80px 1fr;
-        height: auto;
+        height: auto 400px;
         min-height: 400px;
     }
 

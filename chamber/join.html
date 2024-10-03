@@ -21,7 +21,9 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.webp" alt="logo" width="35" height="35">
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo" width="100" height="100">
+        </div>
         <h1>Pallet Town Chamber of Commerce</h1>
         <button id="hamburgerMenu" title="menu button"></button>
     </header>
@@ -36,7 +38,51 @@
     </nav>
 
     <main>
+        <form method="get" action="thankyou.html">
+            <h2>Join The Chamber</h2>
+            <div>*Indicates Required</div>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" id="fname" autocomplete="given-name" required>
+                </label>
 
+                <label class="top">Last Name* <input type="text" name="lname" id="lname" autocomplete="family-name" required>
+                </label>
+                
+                <label class="top">Title or Position <input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}" placeholder="At least 7 characters" autocomplete="organization-title" title="Please enter at least 7 characters consisting of letters, spaces, and/or hyphens">
+                </label>
+
+                <label class="top">Email Address* <input type="email" name="email" id="email" placeholder="Your-email@domain.com" required> 
+                </label>
+
+                <label class="top">Phone Number* <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required title="Please enter a valid phone number: xxx-xxx-xxxx">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Business Information</legend>
+
+                <label class="top">Business Name <input type="text" name="business" id="business" required>
+                </label>
+
+                <span><br><br><strong>Membership Levels:</strong></span>
+                <label class="radio"><input type="radio" name="membership" id="membership-np" value="np"> Non-Profit (NP)
+                </label>
+
+                <label class="radio"><input type="radio" name="membership" id="membership-bronze" value="bronze"> Bronze Membership
+                </label>
+
+                <label class="radio"><input type="radio" name="membership" id="membership-silver" value="silver"> Silver Membership
+                </label>
+
+                <label class="radio"><input type="radio" name="membership" id="membership-gold" value="gold"> Gold Membership
+                </label>
+                
+                <label class="top">Description of Business/Organization
+                <textarea name="description" id="description"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp" value="12345"></label>
+            </fieldset>
+        </form>
     </main>
 
     <footer>
@@ -72,7 +118,5 @@
     </footer>
 
     <script src="../scripts/dates.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
