@@ -130,7 +130,7 @@
         display: grid;
         grid-template-columns: 200px 200px;
         grid-template-rows: 80px 80px 1fr;
-        height: auto 400px;
+        height: auto;
         min-height: 400px;
     }
 
