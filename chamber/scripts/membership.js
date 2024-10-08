@@ -9,7 +9,6 @@ const info = document.querySelector('#show-dialog p');
 close.addEventListener('click', () => showDialog.close());
 
 function displayItems(data){
-    console.log(data)
 
     data.forEach(level => {
         const header = document.createElement('h4');
@@ -27,7 +26,8 @@ displayItems(levels)
 
 function showInfo(level) {
     title.innerHTML = level.name;
-    info.innerHTML = `Fees: Monthly: ${level.monthly} Annual: ${level.annual}
-        <br>Benefits: ${level.benefits.map(benefit => `✧ ${benefit}`).join('<br>')}`;
+    info.innerHTML = `
+        <br><strong>Fees for Monthly/Annual:</strong> ${level.monthly}/${level.annual}
+        <br><strong>Benefits:</strong> ${level.benefits.map(benefit => `✧ ${benefit}`).join('<br>')}`;
     showDialog.showModal();
 }
