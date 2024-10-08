@@ -62,7 +62,7 @@
             <fieldset>
                 <legend>Business Information</legend>
 
-                <label class="top">Business Name <input type="text" name="business" id="business" required>
+                <label class="top">Business Name <input type="text" name="business" id="business" autocomplete="organization" required>
                 </label>
 
                 <span><br><br><strong>Membership Levels:</strong></span>
@@ -85,6 +85,16 @@
 
             <input type="submit" value="Join Now" class="submitBtn">
         </form>
+
+        <section>
+            <h3>Membership Levels</h3>
+            <div id="show-levels">
+                <dialog id="show-dialog">
+                    <h4>Membership Level</h4>
+                    <button>Close</button>
+                </dialog>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -121,5 +131,6 @@
 
     <script src="../scripts/dates.js"></script>
     <script src="scripts/position.js"></script>
+    <script src="scripts/membership.js" type="module"></script>
 </body>
 </html>

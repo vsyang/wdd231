@@ -1,5 +1,6 @@
 //pattern that only accepts alpha characters, hyphens, and spaces with a minimum of seven characters
 const check = document.querySelector('#title');
+const pattern = /[A-Za-z -]+$/;
 
 function accept(title) {
     
@@ -8,7 +9,7 @@ function accept(title) {
         return false;
     }
     
-    const pattern = /^[A-Za-z -]+$/;
+
     if (!pattern.test(title)) {
         alert('Title can only contain letters, spaces and hyphens');
         return false;
