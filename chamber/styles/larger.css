@@ -165,4 +165,32 @@
     .spotlight h2{
         grid-column: 1/4;
     }
+
+    /* join page */
+    .join-main {
+        display: grid;
+        grid-template-columns: 450px 1fr;
+    }
+
+    form fieldset{
+        width: 395px;
+    }
+
+    .join-section {
+        margin-right: 0;
+        grid-column: 2/3;
+        width: 360px;
+        height: 180px;
+        position: sticky;
+        top: 3%;
+        place-items: center;
+    }
+
+     form input.submitBtn {
+        margin: 0 0 0 2vw;
+    }
+
+    .submitBtn:hover {
+        opacity: .6;
+    }
 }

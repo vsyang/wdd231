@@ -28,6 +28,7 @@ h1, h2 {
 h2 {
     font-size: 35px;
     background-color: var(--shadow1);
+    text-align: center;
 }
 
 header, footer {
@@ -363,6 +364,7 @@ form label.top {
 }
 
 form label.top input, form label.top select, #description {
+    appearance: none;
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -404,4 +406,51 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
     transition: opacity 0.5s ease, color 0.5s ease;
+}
+
+.join-section {
+    background-color: white;
+    border: none;
+
+}
+
+.join-section h3, #show-dialog h4 {
+    font-size: 35px;
+    background-color: rgba(62, 203, 228, 0.156);
+    padding: 20px;
+}
+
+.level {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 20px 0 5px 0;
+    background-image: linear-gradient(#eee, #68d4e5);
+    border-radius: 10px 50px;
+    animation-duration: 8s;
+    animation-name: colorful;
+    animation-iteration-count: infinite;
+}
+
+.level button, dialog button {
+    background-color: rgb(0, 0, 0);  
+    overflow: hidden;  
+    animation-duration: 8s;
+    animation-name: colorful;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    0% {color: white;}
+    25% {color: silver;}
+    50% {color: gold;}
+    75% {color: rgb(252, 189, 28);}
+    100% {color: rgb(198, 171, 190);}
+}
+
+dialog {
+    padding: 1rem;
+    box-shadow: 0 0 3rem #515050;
+    width: 90%;
+    max-width: 600px;
+    margin: 300px 23px;
 }

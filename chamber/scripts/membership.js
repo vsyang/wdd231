@@ -11,14 +11,19 @@ close.addEventListener('click', () => showDialog.close());
 function displayItems(data){
 
     data.forEach(level => {
+        const levelContainer = document.createElement('div');
+        levelContainer.classList.add('level')
         const header = document.createElement('h4');
         header.innerHTML = level.name;
         const open = document.createElement('button');
         open.textContent = `Learn More`;
         open.title = `Learn More`;
-        open.addEventListener('click', () => showInfo(level))
-        showLevels.appendChild(header);
-        showLevels.appendChild(open);
+        open.addEventListener('click', () => showInfo(level));
+       
+        levelContainer.appendChild(header);
+        levelContainer.appendChild(open);
+
+        showLevels.appendChild(levelContainer);
     });
 }
 
@@ -27,7 +32,9 @@ displayItems(levels)
 function showInfo(level) {
     title.innerHTML = level.name;
     info.innerHTML = `
-        <br><strong>Fees for Monthly/Annual:</strong> ${level.monthly}/${level.annual}
-        <br><strong>Benefits:</strong> ${level.benefits.map(benefit => `✧ ${benefit}`).join('<br>')}`;
+        <br><strong>Fees for Monthly/Annual:</strong> 
+        <br>${level.monthly}/${level.annual}
+        <br><br><strong>Benefits:</strong>
+        <br>${level.benefits.map(benefit => `✧ ${benefit}`).join('<br>')}`;
     showDialog.showModal();
 }
