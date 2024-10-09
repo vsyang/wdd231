@@ -454,3 +454,17 @@ dialog {
     max-width: 600px;
     margin: 300px 23px;
 }
+
+/* thank you page */
+#results {
+    margin: 4vw;
+}
+
+#results h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#results p {
+    padding: 5px;
+}
