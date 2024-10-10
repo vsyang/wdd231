@@ -14,5 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    timestamp.value = `${month}-${day}-${year} at ${hour}:${newMinutes} ${ampm}`;
+    timestamp.value = `${month}/${day}/${year} at ${hour}:${newMinutes} ${ampm}`;
 });
+
+//Date.now()
