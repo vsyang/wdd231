@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: "Playpen Sans", cursive;
+    --body-font: "Edu SA Beginner", cursive;
+
+    --heading-color: rgb(7, 109, 211);
+    --body-color: rgb(43, 44, 65);
+    --background-color: rgb(252, 252, 234);
+    --extra-blue: rgb(10, 167, 240);
+}
+
+h1 {
+    font-family: "Playpen Sans", cursive;
+    color: var(--heading-color);
+    font-weight: 800;
+    font-size: 42px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--extra-blue);
+    background-color: var(--body-color);
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+body, footer {
+    font-family: var(--body-font);
+    color: var(--body-color);
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);    
+    justify-content: center;
+    padding: 4vw;
+}
+
+header img {
+    margin-right: 4vw;
+}
+
+main, section {
+    margin: 4vw;
+}
+
+b {
+    font-weight: bolder;
+}
+
+section div {
+    border: solid 2px black;
+    text-align: center;
+    margin: 2px 0;
+    padding: 5px;
+    border-radius: 55px 5px;
+}
+
+.heading-box {
+    background-color: var(--heading-color);
+    color: white;
+}
+
+.body-box {
+    background-color: var(--body-color);
+    color: white;
+}
+
+.back-box {
+    background-color: var(--background-color);
+}
+
+.extra {
+    background-color: var(--extra-blue);
+}
+
+.heading-font {
+    font-family: var(--heading-font);
+}
+
+.wireframe {
+    border: none;
+}
+
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 2vw;
+    background-color: var(--background-color);
+    border-top: solid 1px;
+    text-align: center;
+}
