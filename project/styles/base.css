@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: "Playpen Sans", cursive;
+    --body-font: "Edu SA Beginner", cursive;
+
+    --heading-color: rgb(10, 167, 240);
+    --body-color: rgb(43, 44, 65);
+}
