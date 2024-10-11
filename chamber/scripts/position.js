@@ -6,13 +6,13 @@ const pattern = /^[A-Za-z -]+$/;
 function accept(title) {
     
     if (title.length < 7) {
-        alert('Title must be at least 7 characters long.')
+        alert('Title or Position must be at least 7 characters long.')
         return false;
     }
     
 
     if (!pattern.test(title)) {
-        alert('Title can only contain letters, spaces and hyphens');
+        alert('Title or Position can only contain letters, spaces and hyphens');
         return false;
     }
     return true;
