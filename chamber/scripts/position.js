@@ -1,6 +1,7 @@
 //pattern that only accepts alpha characters, hyphens, and spaces with a minimum of seven characters
+const form = document.querySelector('form');
 const check = document.querySelector('#title');
-const pattern = /[A-Za-z -]+$/;
+const pattern = /^[A-Za-z -]+$/;
 
 function accept(title) {
     
@@ -17,7 +18,10 @@ function accept(title) {
     return true;
 }
 
-check.addEventListener('input', function() {
-    accept(title);
+form.addEventListener('submit', function(event) {
+    const value = check.value;
+    if(!accept(value)) {
+        event.preventDefault();
+    }
 });
 

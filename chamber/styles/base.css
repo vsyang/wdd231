@@ -470,8 +470,28 @@ dialog {
 }
 
 /* discover page */
+.stats {
+    margin: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    text-align: right; 
+    padding: 0 0 10px 0;
+}
+
+.right {
+    text-align: left;
+    padding: 0 0 10px 20px;
+}
+
 iframe {
     border: 0;
-    width: 800px;
-    height: 600px;
+    max-width: 200px;
+    height: 200px;
+}
+
+figure {
+    margin: 30px;
 }
