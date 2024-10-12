@@ -242,7 +242,7 @@ main section  {
     color: black;
     border: 1px solid rgb(63, 60, 60, 0.4);
     border-radius: 5px;
-    background-color: #eee;
+    background-image: linear-gradient(white, rgba(217, 217, 217, 0.77), white, pink);
     text-align: center;
 }
 
@@ -338,6 +338,10 @@ main section  {
     text-align: center;
     padding: 20px;
 
+}
+
+form {
+    background-image: linear-gradient(white, rgb(228, 228, 228), white, rgb(255, 203, 212));
 }
 
 form div {
@@ -490,12 +494,23 @@ dialog {
     padding: 0 0 10px 20px;
 }
 
-iframe {
-    border: 0;
+.sidebar img {
+    border: gray solid 2px;
     max-width: 200px;
     height: 200px;
+    margin-bottom: 25px;
 }
 
 figure {
     margin: 30px;
+    border: solid 1px gray;
+}
+
+figure img {
+    box-shadow: gray 20px 20px 30px;
+    margin-top: 20px;
+}
+
+figcaption {
+    margin-bottom: 20px;
 }

@@ -15,7 +15,7 @@ function displayMessage() {
         const daysDifference = calculateDays(currentTime, lastVisit);
 
         if (daysDifference < 1) {
-            message.textContent = "Back so soon! Great to see you!";
+            message.textContent = "Back so soon! Awesome!";
         } else {
             const plural = daysDifference === 1 ? '' : 's';
             message.textContent = `You last visited ${daysDifference} day${plural} ago.`;

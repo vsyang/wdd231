@@ -193,4 +193,27 @@
     .submitBtn:hover {
         opacity: .6;
     }
+
+    /* discover page */
+    .discover-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sidebar {
+        top: 20%;
+        position: sticky;
+        height: 700px;
+        max-width: 500px;
+    }
+
+    .local-attractions img {
+        width: 240px;
+        height: auto;
+        transition: 0.5s;
+    }
+
+    .local-attractions img:hover {
+        border-radius: 150px 10px; 
+    }
 }
