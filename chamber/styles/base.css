@@ -510,6 +510,12 @@ figure {
 figure img {
     box-shadow: gray 20px -5px 30px;
     margin-top: 20px;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 figcaption {
