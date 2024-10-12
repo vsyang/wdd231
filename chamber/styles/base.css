@@ -504,10 +504,11 @@ dialog {
 figure {
     margin: 30px;
     border: solid 1px gray;
+    background-color: white;
 }
 
 figure img {
-    box-shadow: gray 20px 20px 30px;
+    box-shadow: gray 20px -5px 30px;
     margin-top: 20px;
 }
 
