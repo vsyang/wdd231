@@ -1,4 +1,4 @@
-const weather = document.querySelector('.weather-info');
+const weatherInfo = document.querySelector('.weather-info');
 let current = document.querySelector('.current');
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -38,6 +38,7 @@ function displayResults(data, forecast) {
     weatherIcon.setAttribute('src', icon);
     weatherIcon.setAttribute('alt', capDescription);
     description.textContent = `${capDescription}`;
+    current.innerHTML = '';
     current.appendChild(heading);
     current.appendChild(currentTemp);
     current.appendChild(weatherIcon);
