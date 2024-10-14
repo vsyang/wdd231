@@ -50,8 +50,6 @@ function displayResults(data, forecast) {
     forecastHeader.textContent = `Weather Forecast`;
     weatherForecast.appendChild(forecastHeader);
 
-    let displayedDay = new Set();
-
     for (let i = 0; i < 3; i++) {
         let forecastData = document.createElement('div');
         let icon = document.createElement('img');
