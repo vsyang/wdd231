@@ -48,13 +48,57 @@ header {
     position: relative;
     justify-content: center;
     padding: 4vw;
-    font-size: 30px;
+    font-size: 30px;;
 }
 
 header img {
     margin-right: 4vw;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+
 }
 
+nav {
+    background-color: black;
+    text-align: center;
+    color: var(--extra-blue);
+}
+
+#hamburgerMenu {
+    display: block;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: var(--heading-color);
+    cursor: pointer;
+    width: 50px;
+    text-align: left;
+    padding: 10px 2vw;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+#hamburgerMenu::before {
+    content: "☰";
+}
+
+#hamburgerMenu.open::before {
+    content: "x";
+}
+
+ul.navLinks {
+    display: none;
+    list-style-type: none;
+}
+
+ul.open.navLinks {
+    display: block;
+}
+
+
+
+/* home */
 section {
     margin: 4vw;
 }
