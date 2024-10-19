@@ -7,7 +7,7 @@
 
 :root {
     --heading-font: "Playpen Sans", cursive;
-    --body-font: "Edu SA Beginner", cursive;
+    --body-font: "Edu SA Beginner", serif;
 
     --heading-color: rgb(7, 109, 211);
     --body-color: rgb(43, 44, 65);
@@ -34,7 +34,6 @@ h2 {
 
 body, footer {
     font-family: var(--body-font);
-    color: var(--body-color);
     font-size: 20px;
 }
 
@@ -59,12 +58,6 @@ header img {
 
 }
 
-nav {
-    background-color: black;
-    text-align: center;
-    color: var(--extra-blue);
-}
-
 #hamburgerMenu {
     display: block;
     font-size: 40px;
@@ -87,16 +80,59 @@ nav {
     content: "x";
 }
 
+nav {
+    background-color: var(--body-color);
+    text-align: center;
+    color: var(--extra-blue);
+}
+
 ul.navLinks {
     display: none;
     list-style-type: none;
+    padding: 15px;
 }
 
 ul.open.navLinks {
     display: block;
+    padding: 5px;
+    font-size: 25px;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--extra-blue);
+}
 
+.active {
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: rgb(91, 32, 42);
+}
+
+nav li {
+    padding: 10px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.socials {
+    padding: 25px;
+}
+
+.socials img {
+    border-radius: 50%;
+    margin: 5px;
+}
+
+footer p {
+    font-size: 14px;
+    padding: 5px;
+}
 
 /* home */
 section {
