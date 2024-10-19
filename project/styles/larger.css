@@ -1,0 +1,60 @@
+@media only screen and (min-width: 600px) {
+    header, nav ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        padding: 55px;
+        font-size: 44px;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    header, main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        height: auto 74px;
+    }
+
+    #hamburgerMenu {
+        display: none;
+    }
+
+    ul.navLinks, ul.navLinks.open {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    nav li:hover {
+        font-weight: bolder;
+    }
+
+    /* home */
+    .cta {
+        width: 97%;
+    }
+
+    .cta:hover::before {
+        opacity: 1;
+    }
+    
+    .cta:active:after {
+        background: transparent;
+    }
+
+    .cta:active {
+        color: #000;
+    }
+
+}
