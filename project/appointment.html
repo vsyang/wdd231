@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bluey's Beauty | WDD 231 | Vanessa Yang</title>
+    <title>Bluey's Beauty Scheduler | WDD 231 | Vanessa Yang</title>
     <meta name="author" content="Vanessa Yang">
-    <meta name="description" content="The home page for Bluey's Beauty">
+    <meta name="description" content="The appointment page for Bluey's Beauty where customers can make an appointment">
     <meta property="og:title" content="Bluey's Beauty Homepage">
     <meta property="og:type" content="website">
     <meta property="og:description" content="The Homepage for Bluey's Beauty Salon">
@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
     <script src="../scripts/hamburger.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Playpen+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.webp">
-        <h2>Bluey's Beauty</h2>
+        <img src="images/logo.webp" alt="The logo for Bluey's Beauty" width="100" height="100">
+        <h1>Bluey's Beauty</h1>
         <button id="hamburgerMenu" title="menu button"></button>
     </header>
 
@@ -32,12 +35,34 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="home-main">
 
+        <button class="cta" onclick="window.location.href='gallery.html'">View the Gallery!</button>
     </main>
 
     <footer>
+        <div class="footer-top">
+            <img src="images/logo.webp" width="100" height="100" alt="Bluey's Beauty logo">
+            <div class="contact">
+                <h3>
+                    <strong>Bluey's Beauty</strong>
+                </h3>
+                <address>
+                    43 Mabel Street
+                    <br>Brisbane City, Queensland 4000
+                    <br><br>Phone: <a href="tel:1234567890">(123) 456-7890</a>
+                </address>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com/@BlueyOfficialChannel" target="_blank"><img src="/chamber/images/youtube.webp" alt="YouTube" width="60" height="60"></a>
+            <a href="https://www.facebook.com/OfficialBlueyTV/" target="_blank"><img src="images/facebook.webp" alt="Facebook" width="60" height="60"></a>
+            <a href="https://x.com/OfficialBlueyTV" target="_blank"><img src="/chamber/images/twitterx.webp" alt="Twitter" width="60" height="60"></a>
+            <a href="https://www.instagram.com/officialblueytv/?hl=en" target="_blank"><img src="/chamber/images/instagram.webp" alt="Instagram" width="60" height="60"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> 🦋 Vanessa Yang 🦋 WDD 231 🦋 Final Project</p>
 
+        <p id="lastModified"></p>
     </footer>
 
     <script src="../scripts/dates.js"></script>

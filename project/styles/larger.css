@@ -19,10 +19,6 @@
         margin: 0 auto;
     }
 
-    nav {
-        height: auto 74px;
-    }
-
     #hamburgerMenu {
         display: none;
     }
@@ -41,14 +37,24 @@
     }
 
     /* home */
+    .home-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-header, .cta {
+        grid-column: 1/ span 2;
+    }
+
     .cta {
-        width: 97%;
+        margin: 30px;
+        left: 2%;
     }
 
     .cta:hover::before {
         opacity: 1;
     }
-    
+
     .cta:active:after {
         background: transparent;
     }
@@ -56,5 +62,6 @@
     .cta:active {
         color: #000;
     }
+
 
 }

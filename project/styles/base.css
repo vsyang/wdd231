@@ -85,7 +85,7 @@ header img {
 nav {
     background-color: var(--body-color);
     text-align: center;
-    color: var(--extra-blue);
+    color: var(--background-color);
 }
 
 ul.navLinks {
@@ -97,12 +97,12 @@ ul.navLinks {
 ul.open.navLinks {
     display: block;
     padding: 5px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--extra-blue);
+    color: var(--background-color);
 }
 
 .active {
@@ -155,6 +155,7 @@ footer p {
     cursor: pointer;
     position: relative;
     z-index: 0;
+    background: black;
 }
 
 .cta::after {
