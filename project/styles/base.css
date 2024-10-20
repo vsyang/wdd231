@@ -232,13 +232,7 @@ dialog {
     padding: 20px;
     background: pink;
     border: none;
-    transition: opacity 5s ease, transform 5s ease;
     border-radius: 8px 50px;
-}
-
-dialog.show {
-    opacity: 1;
-    transform: scale(1);
 }
 
 .close-button {

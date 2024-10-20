@@ -63,5 +63,28 @@
         color: #000;
     }
 
+    /* gallery */
+    .gallery-main {
+        margin: 30px auto;
+        display: grid;
+    }
 
+    .gallery-main h2 {
+        grid-row: 1/2;
+    }
+
+    .gallery-main p {
+        grid-row: 2/3;
+    }
+
+    #photo-here {
+        grid-row: 3/4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    dialog {
+        margin: 20% 40%;
+    }
 }

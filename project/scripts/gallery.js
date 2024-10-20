@@ -37,7 +37,7 @@ function showDialog(client) {
     info.innerHTML = `
     Creation of ${client.stylist}
     <br>This service cost ${client.cost}+
-    <br>If you'd like this transformation, ask our receptionist for a ${client.service}
+    <br>If you'd like this transformation, book an appointment for a ${client.service}
     `;
     dialog.showModal();
 }
