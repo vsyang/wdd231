@@ -1,0 +1,112 @@
+{
+    "clients": [
+        {
+            "service": "Cut",
+            "image": "cut1.webp",
+            "stylist": "Wendy",
+            "cost": "$50"
+        },
+        {
+            "service": "Cut",
+            "image": "cut2.webp",
+            "stylist": "Doreen",
+            "cost": "$50"
+        },
+        {
+            "service": "Cut",
+            "image": "cut3.webp",
+            "stylist": "Bluey",
+            "cost": "$50"
+        },
+        {
+            "service": "Cut",
+            "image": "cut4.webp",
+            "stylist": "Cookie",
+            "cost": "$50"
+        },
+        {
+            "service": "Conditioning",
+            "image": "condition1.webp",
+            "stylist": "Bingo",
+            "cost": "$30"
+        },
+        {
+            "service": "Conditioning",
+            "image": "condition2.webp",
+            "stylist": "Cookie",
+            "cost": "$30"
+        },
+        {
+            "service": "Conditioning",
+            "image": "condition3.webp",
+            "stylist": "Wendy",
+            "cost": "$30"
+        },
+        {
+            "service": "Makeup",
+            "image": "makeup1.webp",
+            "stylist": "Bluey",
+            "cost": "$50"
+        },
+        {
+            "service": "Nails",
+            "image": "nail1.webp",
+            "stylist": "Bingo",
+            "cost": "$45"
+        },
+        {
+            "service": "Perm",
+            "image": "perm1.webp",
+            "stylist": "Bingo",
+            "cost": "$60"
+        },
+        {
+            "service": "Perm",
+            "image": "perm2.webp",
+            "stylist": "Cookie",
+            "cost": "$60"
+        },
+        {
+            "service": "Perm",
+            "image": "perm3.webp",
+            "stylist": "Wendy",
+            "cost": "$60"
+        },
+        {
+            "service": "Style",
+            "image": "style1.webp",
+            "stylist": "Doreen",
+            "cost": "$70"
+        },
+        {
+            "service": "Style",
+            "image": "style2.webp",
+            "stylist": "Bluey",
+            "cost": "$70"
+        },
+        {
+            "service": "Style",
+            "image": "style3.webp",
+            "stylist": "Bingo",
+            "cost": "$70"
+        },
+        {
+            "service": "Color",
+            "image": "color1.webp",
+            "stylist": "Cookie",
+            "cost": "$350"
+        },
+        {
+            "service": "Color",
+            "image": "color2.webp",
+            "stylist": "Wendy",
+            "cost": "$350"
+        },
+        {
+            "service": "Color",
+            "image": "color3.webp",
+            "stylist": "Doreen",
+            "cost": "$350"
+        }
+    ]
+}
