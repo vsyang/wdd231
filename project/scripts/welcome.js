@@ -4,24 +4,20 @@ function calculateDays(currentTime, lastVisit) {
     return Math.floor(timeDifference / msPerDay);
 }
 
-function displayMessage() {
-    const message = document.getElementById('welcome');
+export function displayMessage() {
     const currentTime = Date.now();
     const lastVisit = localStorage.getItem('lastVisit');
 
     if (!lastVisit) {
-        message.textContent = "Welcome! Contact us if you have any questions."
+        localStorage.setItem('lastVisit', currentTime);
+        return "Welcome! Contact us if you have any questions."
     } else {
         const daysDifference = calculateDays(currentTime, lastVisit);
 
         if (daysDifference < 1) {
-            message.textContent = "Back so soon! Awesome!";
+            return "Back so soon! Awesome!";
         } else {
-            message.textContent = "Ready for a touch-up?";
+            return "Ready for a touch-up?";
         }
     }
-
-    localStorage.setItem('lastVisit', currentTime);
 }
-
-window.onload = displayMessage;

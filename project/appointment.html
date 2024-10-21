@@ -36,10 +36,10 @@
     </nav>
 
     <main class="appointment-main">
-        <section class="welcome">
+        <div class="welcome">
             <h2 id="welcome" title="welcome message">Hello</h2>
             <div class="menu">
-                <h3 class="span">Services We Offer</h3>
+                <h3 class="span">Transformations We Offer</h3>
                 <h4 class="left">Services</h4>
                 <h4 class="right">Cost</h4>
                 <p class="left">Haircut</p>
@@ -54,14 +54,97 @@
                 <p class="right">$350+</p>
                 <p class="left">Perm</p>
                 <p class="right">$60</p>
-                <p class="left">Makeup</p>
+                <p class="left">Make-up</p>
                 <p class="right">$50</p>
                 <p class="left">Nails</p>
                 <p class="right">$45+</p>
             </div>
-        </section>
 
-        
+            <div class="open-hours">
+                <h3 class="span">Our Hours</h3>
+                <p class="left">Monday - Friday</p>
+                <p class="right">9:00 AM - 8:00 PM</p>
+                <p class="left">Saturday</p>
+                <p class="right">9:00 AM - 6:00 PM</p>
+                <p class="left">Sunday</p>
+                <p class="right">Closed</p>
+            </div>
+        </div>
+
+        <div class="booking">
+            <h3>Book Your Appointment</h3>
+            <p class="required">* Indicates Required</p>
+            <form id="make-appointment" method="get" action="confirmation.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" id="fname" autocomplete="given-name" required>
+                    </label>
+    
+                    <label class="top">Last Name* <input type="text" name="lname" id="lname" autocomplete="family-name" required>
+                    </label>
+    
+                    <label class="top">Email Address* <input type="email" name="email" id="email" autocomplete="email" placeholder="Your-email@domain.com" required> 
+                    </label>
+    
+                    <label class="top">Phone Number* <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx" autocomplete="tel" required title="Please enter a valid phone number">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Service</legend>
+                    <h4>What would you like to do?</h4>
+                    
+                    <div class="checkboxes">
+                        <label class="side"><input type="checkbox" id="cut" name="cut" value="cut"> Haircut
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="condition" name="condition" value="condition"> Condition
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="style" name="style" value="style"> Style
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="color" name="color" value="color"> Color
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="highlights" name="highlights" value="highlights"> Highlights
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="perm" name="perm" value="perm"> Perm
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="makeup" name="makeup" value="makeup"> Make-up
+                        </label>
+    
+                        <label class="side"><input type="checkbox" id="nails" name="nails" value="nails"> Nails
+                        </label>
+                    </div>
+
+                    <label class="top">Date <input type="date" name="date" required>
+                    </label>
+
+                    <label class="top">Time <input type="time" name="time" id="time" list="acceptableHours">
+                        <datalist id="acceptableHours">
+                            <option value="09:00"></option>
+                            <option value="10:00"></option>
+                            <option value="11:00"></option>
+                            <option value="12:00"></option>
+                            <option value="13:00"></option>
+                            <option value="14:00"></option>
+                            <option value="15:00"></option>
+                            <option value="16:00"></option>
+                            <option value="17:00"></option>
+                            <option value="18:00"></option>
+                            <option value="19:00"></option>
+                        </datalist>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                </fieldset>
+
+                <input type="submit" value="Book My Appointment" class="submitBtn">
+            </form>
+        </div>
         <button class="cta" onclick="window.location.href='about.html'">View Our Stylists!</button>
     </main>
 
@@ -91,6 +174,6 @@
     </footer>
 
     <script src="../scripts/dates.js"></script>
-    <script src="scripts/welcome.js"></script>
+    <script src="scripts/appointment.js" type="module"></script>
 </body>
 </html>
