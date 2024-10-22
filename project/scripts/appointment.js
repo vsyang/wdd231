@@ -1,5 +1,6 @@
-import {displayMessage} from "./welcome.js";
+import { displayMessage } from "./welcome.js";
 import { accept } from "./phone.js";
+import { validateCheckboxes } from "./checkbox.js";
 
 //welcome message
 const welcome = document.querySelector('#welcome');
@@ -15,3 +16,5 @@ form.addEventListener('submit', function(event) {
     }
 });
 
+//checkbox validator
+validateCheckboxes('#make-appointment', '.checkboxes');

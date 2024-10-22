@@ -14,7 +14,7 @@ export function displayMessage() {
     } else {
         const daysDifference = calculateDays(currentTime, lastVisit);
 
-        if (daysDifference < 1) {
+        if (daysDifference <= 1) {
             return "Back so soon! Awesome!";
         } else {
             return "Ready for a touch-up?";
