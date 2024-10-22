@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const timestamp = document.querySelector('#timestamp');
+    const timestamp = document.querySelector('#tstamp');
     const currentTimestamp = new Date();
     
     const year = currentTimestamp.getFullYear();
