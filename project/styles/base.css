@@ -312,7 +312,9 @@ form legend {
     color: var(--body-color);
 }
 
-input {
+input,
+input[type="date"],
+input[type="time"] {
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
