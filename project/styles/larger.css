@@ -12,6 +12,7 @@
 
     header {
         align-items: center;
+        max-height: 150px;
     }
 
     header, main, nav, footer {
@@ -34,6 +35,16 @@
 
     nav li:hover {
         font-weight: bolder;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer p {
+        flex-basis: 100%;
     }
 
     /* home */
@@ -89,4 +100,35 @@
     }
 
     /* appointment */
+    .appointment-main {
+        display: grid;
+        grid-template-columns: 450px 1fr;
+        margin: 30px auto;
+    }
+
+    #welcome {
+        grid-column: 1/3;
+        padding: 2px;
+
+    }
+
+    .welcome {
+        grid-column: 1/2;
+        max-width: 300px;
+        max-height: 450px;
+        position: sticky;
+        top: 5%;
+        margin-bottom: 200px;
+
+    }
+
+    .booking {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    form input.submitBtn {
+        margin: 0 0 4vw 2vw;
+        width: 100%;
+    }
 }

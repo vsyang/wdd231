@@ -356,3 +356,17 @@ form input.submitBtn {
     transition: opacity 0.5s ease, color 0.5s ease;
 }
 
+/* confirmation */
+.confirmation-main {
+    margin: 2vw;
+}
+
+#results {
+    min-height: 350px;
+    margin: 4vw;
+}
+
+.joke-section {
+    min-height: 150px;
+    margin: 4vw;
+}
