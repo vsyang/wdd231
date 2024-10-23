@@ -249,6 +249,10 @@ dialog {
 }
 
 /* appointment */
+.appointment-main {
+    margin: 2vw;
+}
+
 .menu, .open-hours {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -265,12 +269,14 @@ dialog {
     margin-right: 10px;
     text-align: right;
     grid-column: 1/2;
+    width: 150px;
 }
 
 .right {
     text-align: left;
     grid-column: 2/3;
     margin-left: 10px;
+    width: 180px;
 }
 .open-hours {
     grid-row: 3/4;
@@ -369,4 +375,24 @@ form input.submitBtn {
 .joke-section {
     min-height: 150px;
     margin: 4vw;
+    padding: 30px ;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 2px var(--extra-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.jokeButton {
+    padding: 5px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 150px;
+    background: rgb(198, 242, 249);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+
