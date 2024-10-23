@@ -376,7 +376,7 @@ form input.submitBtn {
 
 .joke-section {
     min-height: 150px;
-    margin: 4vw;
+    margin: 20px 4vw 80px 4vw;
     padding: 30px ;
     border-radius: 5px;
     box-shadow: 0 4px 8px 2px var(--extra-blue);
