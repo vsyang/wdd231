@@ -26,7 +26,7 @@ function displayStylists (data) {
         photo.width = 200;
         photo.height = 200;
 
-        quote.innerHTML = `${stylist.quote}  -${stylist.name}`;
+        quote.innerHTML = `"${stylist.quote}"   🩵 ${stylist.name}`;
 
         stylistCards.appendChild(sName);
         stylistCards.appendChild(photo);

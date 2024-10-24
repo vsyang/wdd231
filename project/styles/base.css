@@ -406,7 +406,7 @@ form input.submitBtn {
 }
 
 .slider {
-    min-height: 2400px;
+    height: 2400px;
     margin: 4vw;
 }
 
