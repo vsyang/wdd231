@@ -146,4 +146,73 @@
     .joke-section p {
         min-height: 150px;
     }
+
+    /* about */
+    .about-main {
+        margin: 2vw auto;
+    }
+
+    .slider-wrapper {
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+        height: 600px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+        margin: 0;
+    }
+
+    .stylist-card {
+        flex: 0 0 100%;
+        margin: 0;
+        padding: 20px;
+        min-width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: none;
+    }
+
+    .stylist-card h3 {
+        writing-mode: horizontal-tb;
+    }
+
+    .slider-nav {
+        visibility: visible;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        margin: 50px auto;
+        max-width: 1000px;
+
+    }
+
+    .slider-nav a {
+        color: var(--extra-blue);
+        background-color: var(--body-color);
+        padding: 25px;
+        cursor: pointer;
+        border-radius: 50%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        transition: background-color 1s ease;
+    }
+
+    .slider-nav a:hover {
+        opacity: 0.5;
+    }
 }

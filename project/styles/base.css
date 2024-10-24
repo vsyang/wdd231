@@ -433,3 +433,7 @@ form input.submitBtn {
     margin-bottom: 20px;
     box-shadow: 1px 1px 10px gray;
 }
+
+.slider-nav {
+    visibility: hidden;
+}

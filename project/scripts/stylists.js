@@ -34,6 +34,28 @@ function displayStylists (data) {
 
         slider.appendChild(stylistCards);
     });
+    slideShow();
 }
 
 getData();
+
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.stylist-card');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides -1;
+    } else {
+        currentSlide = index;
+    }
+
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;  
+}
+
+document.querySelector('.previous').addEventListener('click', () => showSlide(currentSlide - 1));
+document.querySelector('.next').addEventListener('click', () => showSlide(currentSlide + 1));
