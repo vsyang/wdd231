@@ -34,7 +34,6 @@ function displayStylists (data) {
 
         slider.appendChild(stylistCards);
     });
-    slideShow();
 }
 
 getData();
