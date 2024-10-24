@@ -400,4 +400,35 @@ form input.submitBtn {
     font-size: 20px;
 }
 
+/* about */
+.about-main {
+    margin: 2vw;
+}
 
+
+.stylist-card {
+    margin: 40px 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 20px 5px var(--extra-blue);
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+.stylist-card  h3 {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    width: 50px;
+}
+
+.stylist-card img {
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.stylist-card:last-child {
+    margin-bottom: 80px;
+}

@@ -1,0 +1,29 @@
+{
+    "stylists": [
+        {
+            "name": "Wendy",
+            "image": "stylist1.webp",
+            "quote": "I was inspired by my father, an experienced sheep shearer. Watching him work, I noticed how content and happy the sheep were afterward. It sparked my desire to bring that same sense of care and satisfaction to others."
+        },
+        {
+            "name": "Bluey",
+            "image": "stylist2.webp",
+            "quote": "From as far back as I can remember, I've always loved to express my creativity and artistry. To be able to share this experience with each person in my chair is a truly wonderful feeling."
+        },
+        {
+            "name": "Cookie",
+            "image": "stylist3.webp",
+            "quote": "Having the opportunity to meet new people while making them beautiful has been amazing! I can't wait to see you so we can share stories and have a great time at the salon."
+        },
+        {
+            "name": "Doreen",
+            "image": "stylist4.webp",
+            "quote": "It is seeing the smiles of my guests faces that keep me going. I have many years of experience, but what I enjoy most is seeing the joy on someones face after a beautiful transformation."
+        },
+        {
+            "name": "Bingo",
+            "image": "stylist5.webp",
+            "quote": "My childhood has lead me on this adventure where I have the freedom to help express the beauty inside onto the outside. There is more imagination to be explored so come on by and let's explore together!"
+        }
+    ]
+}
