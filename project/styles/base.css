@@ -405,9 +405,13 @@ form input.submitBtn {
     margin: 2vw;
 }
 
+.slider {
+    min-height: 2400px;
+    margin: 4vw;
+}
 
 .stylist-card {
-    margin: 40px 10px;
+    margin: 60px 10px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -425,10 +429,7 @@ form input.submitBtn {
 
 .stylist-card img {
     width: 200px;
-    border-radius: 20px;
+    border-radius: 25%;
     margin-bottom: 20px;
-}
-
-.stylist-card:last-child {
-    margin-bottom: 80px;
+    box-shadow: 1px 1px 10px gray;
 }

@@ -23,6 +23,8 @@ function displayStylists (data) {
         photo.src = `${imgUrl}${stylist.image}`;
         photo.alt = `This is a photo of ${stylist.name}`;
         photo.loading = 'lazy';
+        photo.width = 200;
+        photo.height = 200;
 
         quote.innerHTML = `${stylist.quote}  -${stylist.name}`;
 
